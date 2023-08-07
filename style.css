@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+    height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .product {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+
+    .product-image {
+        border-right: none !important;
+        border-bottom: 1px solid #6e7674;
+        margin-bottom: 10px;
+    }
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #6e7674;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #6e7674;
+    padding: 25px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #6e7674;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly !important;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+}
+
+.product-title {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+
+.product-image {
+    padding: 50px;
+    border-right: 1px solid #6e7674;
+}
+
+.product-image img {
+    width: 250px;
+}
+
+.product-details {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.product-price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons-holder {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.action-btn {
+    padding: 10px;
+    color: #6e7674;
+    background-color: white;
+    border: 1px solid #6e7674;
+    border-radius: 15px;
+}
+
+.action-btn:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #7c7c7c;
+    border: 1px solid #6e7674;
+    cursor: pointer;
+}
